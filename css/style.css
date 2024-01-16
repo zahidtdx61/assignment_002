@@ -3,11 +3,14 @@
     --orange: #ff5400;
     --light-gray: #6c6c6c;
     --black: #131318;
+    --white: #fff;
+    --screen-width: 1440px;
 }
 
 /* style for navbar */
+
 .navbar {
-    width: 1280px;
+    width: var(--screen-width);
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -60,6 +63,50 @@
     color: var(--light-gray);
 }
 
+.menu a:hover {
+    text-decoration: underline;
+}
+
 #home-link {
     color: var(--orange);
+}
+
+/* setting style for main section */
+main {
+    width: var(--screen-width);
+    margin: auto;
+}
+
+/* style for banner section */
+#cover-banner {
+    height: 550px;
+    border-radius: 10px;
+    background-image: linear-gradient(
+            180deg,
+            rgba(19, 19, 24, 0.8) 0%,
+            rgba(19, 19, 24, 0) 100%
+        ),
+        url("../assets/1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    font-family: Mulish;
+}
+
+#cover-banner > h1 {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+#cover-banner > p {
+    width: 70%;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 140%;
 }
