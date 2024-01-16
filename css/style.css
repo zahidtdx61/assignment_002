@@ -253,12 +253,12 @@ main {
 }
 
 .choose-destination-img-container {
-    min-width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 2%;
+    grid-template-rows: repeat(3, 300px);
+    row-gap: 10px;
+    column-gap: 10px;
 }
 
 .choose-destination-img-container > div {
@@ -321,4 +321,102 @@ main {
 #dest-img-7 {
     grid-column: 6 / span 7;
     grid-row: 3 / span 1;
+}
+
+/* styles for our services section */
+.our-services {
+    width: 100%;
+    margin: 5% auto;
+}
+
+.our-services > h1 {
+    color: var(--black);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+#msg {
+    width: 500px;
+    margin: 2% auto;
+    color: var(--light-gray);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: (12, 1fr);
+    grid-template-rows: (2, 310px);
+    row-gap: 15px;
+    column-gap: 15px;
+    justify-content: center;
+}
+
+.card {
+    width: 580px;
+    height: 300px;
+    padding: 20px;
+}
+
+.card-1 {
+    grid-column: 1 / span 6;
+    grid-row: 1 / span 1;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.2);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.card-2 {
+    grid-column: 7 / span 6;
+    grid-row: 1 / span 1;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.2);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.card-3 {
+    grid-column: 4/span 6;
+    grid-row: 2 / span 1;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.2);
+    background: rgba(233, 68, 68, 0.05);
+}
+
+.card h3 {
+    color: var(--black);
+    font-family: Mulish;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.card p {
+    color: var(--light-gray);
+    font-family: Mulish;
+    font-size: 1.1;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    width: 480px;
+}
+
+.card-img {
+    height: 100px;
+    width: 100px;
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
