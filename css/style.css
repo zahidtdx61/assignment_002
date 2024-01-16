@@ -38,7 +38,7 @@
 .hr-line {
     height: 1px;
     width: 100%;
-    background: rgba(19, 19, 24, 0.5);
+    background: rgba(19, 19, 24, 0.3);
     border: none;
 }
 
@@ -508,4 +508,56 @@ main {
     font-style: normal;
     font-weight: 800;
     line-height: normal;
+}
+
+/* styles for footer section */
+footer{
+    margin-top: 5%;
+    width: 100%;
+    background: rgba(19, 19, 24, 0.05);
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+footer p{
+    width: 450px;
+    text-align: center;
+    color: var(--light-gray);
+}
+
+.social-media{
+    font-size: 30px;
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+footer .hr-line{
+    width: 80%;
+}
+
+.social-media i{
+    display: block;
+}
+
+.copy-right{
+    color: #131318;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 40px;
 }
