@@ -184,7 +184,7 @@ main {
     width: 48%;
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    justify-content: space-between;
 }
 
 .tour-desc h1 {
@@ -211,7 +211,7 @@ main {
 }
 
 .visited-places {
-    width: 70%;
+    width: 90%;
     color: var(--light-gray);
     font-family: Mulish;
     font-size: 1rem;
@@ -223,4 +223,102 @@ main {
 
 .visited-places-list {
     padding: 3%;
+}
+
+/* styles for choose destination section */
+.choose-destination {
+    width: 100%;
+}
+
+.choose-destination h1 {
+    color: var(--black);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.choose-destination > p {
+    width: 50%;
+    margin: 2% auto;
+    color: var(--light-gray);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.choose-destination-img-container {
+    min-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2%;
+}
+
+.choose-destination-img-container > div {
+    position: relative;
+}
+
+.choose-destination-img-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border: 0;
+    border-radius: 8px;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+#dest-img-1 {
+    grid-column: 1 / span 6;
+    grid-row: 1 / span 1;
+}
+
+#dest-img-2 {
+    grid-column: 7 / span 6;
+    grid-row: 1 / span 1;
+}
+
+#dest-img-3 {
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 1;
+}
+
+#dest-img-4 {
+    grid-column: 5 / span 5;
+    grid-row: 2 / span 1;
+}
+
+#dest-img-5 {
+    grid-column: 10 / span 3;
+    grid-row: 2 / span 1;
+}
+
+#dest-img-6 {
+    grid-column: 1 / span 5;
+    grid-row: 3 / span 1;
+}
+
+#dest-img-7 {
+    grid-column: 6 / span 7;
+    grid-row: 3 / span 1;
 }
