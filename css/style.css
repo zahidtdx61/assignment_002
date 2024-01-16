@@ -1,0 +1,65 @@
+/* common style */
+:root {
+    --orange: #ff5400;
+    --light-gray: #6c6c6c;
+    --black: #131318;
+}
+
+/* style for navbar */
+.navbar {
+    width: 1280px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.logo-title {
+    width: 60%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.logo-title > img {
+    margin-right: 2%;
+}
+
+.logo-title > h1 {
+    font-family: Mulish;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+#venture {
+    color: var(--black);
+}
+
+#vibes {
+    color: var(--orange);
+}
+
+.menu {
+    flex-grow: 1;
+}
+
+.menu > ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 1.2rem;
+    font-weight: 400;
+    gap: 2%;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--light-gray);
+}
+
+#home-link {
+    color: var(--orange);
+}
