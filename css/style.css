@@ -517,6 +517,7 @@ main {
 /* styles for footer section */
 footer {
     margin-top: 5%;
+    min-width: var(--screen-width);
     width: 100%;
     background: rgba(19, 19, 24, 0.05);
     min-height: 500px;
