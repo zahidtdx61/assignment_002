@@ -161,4 +161,28 @@
     footer {
         min-width: 600px;
     }
+
+    /* style for deals and discount */
+    .deals-promo {
+        width: 80%;
+    }
+
+    .deals-discount{
+        max-width: 580px;
+        border: 5% auto;
+    }
+
+    .large-card{
+        max-width: 580px;
+        height: 650px;
+        position: relative;
+    }
+
+    .large-card .deal-card{
+        position: relative;
+        left: 0%;
+        top: 50%;
+        margin: 0 auto;
+    }
+
 }
