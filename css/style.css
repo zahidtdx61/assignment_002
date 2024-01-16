@@ -497,6 +497,7 @@ main {
     display: block;
     width: 100%;
     height: 50px;
+    padding: 10px;
     border: 0;
     margin-bottom: 10px;
     border-radius: 8px;
@@ -547,6 +548,15 @@ footer p {
     gap: 20px;
     margin-top: 15px;
     margin-bottom: 50px;
+}
+
+.social-media > a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.social-media > a:hover{
+    color: cadetblue;
 }
 
 footer .hr-line {
