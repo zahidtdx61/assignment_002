@@ -6,7 +6,7 @@
     --white: #fff;
     --dark-btn: #044040;
     --white-transparent: rgba(255, 255, 255, 0.3);
-    --screen-width: 1440px;
+    --my-screen-width: 1200px;
 }
 
 /* common styles */
@@ -45,8 +45,7 @@
 /* style for navbar */
 
 .navbar {
-    width: var(--screen-width);
-    margin: auto;
+    width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,7 +53,7 @@
 }
 
 .logo-title {
-    width: 60%;
+    width: 700px;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -80,12 +79,12 @@
     color: var(--orange);
 }
 
-.menu-short{
+.menu-short {
     display: none;
 }
 
 .menu-container {
-    flex-grow: 1;
+    width: 500px;
 }
 
 .menu > ul {
@@ -116,7 +115,7 @@
 
 /* setting style for main section */
 main {
-    width: var(--screen-width);
+    width: 1200px;
     margin: auto;
 }
 
@@ -374,7 +373,7 @@ main {
 .card {
     width: 500px;
     height: 300px;
-    padding: 10px;
+    padding: 20px;
 }
 
 .card-1 {
@@ -518,7 +517,7 @@ main {
 /* styles for footer section */
 footer {
     margin-top: 5%;
-    min-width: var(--screen-width);
+    min-width: 100vw;
     width: 100%;
     background: rgba(19, 19, 24, 0.05);
     min-height: 500px;
@@ -550,12 +549,12 @@ footer p {
     margin-bottom: 50px;
 }
 
-.social-media > a{
+.social-media > a {
     text-decoration: none;
     color: inherit;
 }
 
-.social-media > a:hover{
+.social-media > a:hover {
     color: cadetblue;
 }
 
@@ -578,7 +577,7 @@ footer .hr-line {
 }
 
 /* styles for client review section */
-.client-review-section h1{
+.client-review-section h1 {
     text-align: center;
     margin-bottom: 20px;
     font-family: Mulish;
@@ -597,6 +596,136 @@ footer .hr-line {
 
 .client-review .card {
     border-radius: 16px;
-    border: 1px solid rgba(251, 181, 99, 0.2);
-    background: rgba(251, 181, 99, 0.05);
+    border: 1px solid rgba(233, 68, 68, 0.2);
+    background: rgba(233, 68, 68, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    text-align: justify;
+}
+
+.client-review .card > p {
+    padding: 20px;
+}
+
+/* deals and discount section */
+.deals-discount {
+    width: 1200px;
+    margin: 5% auto;
+}
+
+.deals-discount h1 {
+    color: var(--black);
+    text-align: center;
+    font-family: Mulish;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.deals-promo {
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.large-card {
+    width: inherit;
+    height: 400px;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 0;
+    /* position: relative; */
+}
+
+.deal-1 {
+    background-image: url("../assets/deal_1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.deal-2 {
+    background-image: url("../assets/deal_2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.deal-3 {
+    background-image: url("../assets/deal_1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.deal-card {
+    width: 500px;
+    height: 300px;
+    border-radius: 16px;
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(2.5px);
+    position: relative;
+    right: -650px;
+    top: 50px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.deal-2 .deal-card {
+    left: 50px;
+}
+
+.deal-info {
+    display: flex;
+    gap: 30px;
+    color: #5a5a5d;
+    font-family: Mulish;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.deal-info i {
+    color: var(--orange);
+}
+
+.deal-card h2 {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    /* margin-top: 10px; */
+    /* margin-bottom: 10px; */
+}
+
+.deal-card p {
+    color: #5a5a5d;
+    font-family: Mulish;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* margin-bottom: 10px; */
+}
+
+.deal-card h3 {
+    color: #ff5400;
+    font-family: Mulish;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    /* margin-bottom: 15px; */
 }

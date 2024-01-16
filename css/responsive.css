@@ -5,7 +5,7 @@
     --white: #fff;
     --dark-btn: #044040;
     --white-transparent: rgba(255, 255, 255, 0.3);
-    --screen-width: 1440px;
+    --my-screen-width: 1440px;
 }
 
 @media screen and (max-width: 600px) {
@@ -158,7 +158,7 @@
     }
 
     /* styles for footer */
-    footer{
+    footer {
         min-width: 600px;
     }
 }
