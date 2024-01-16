@@ -84,7 +84,7 @@
     display: none;
 }
 
-.menu {
+.menu-container {
     flex-grow: 1;
 }
 
