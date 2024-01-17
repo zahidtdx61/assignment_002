@@ -189,6 +189,25 @@
         margin: 0 auto;
     }
 
+    /* styles for package section */
+    .package{
+        flex-direction: column;
+    }
+
+    .package-detail{
+        width: 100%;
+    }
+
+    .package-img-container{
+        width: 100%;
+    }
+
+    /* styles for client review section */
+    .client-review-section {
+        height: 1300px;
+    }
+
+
     /* styles for newsletter */
     .newsletter {
         flex-direction: column;
@@ -201,23 +220,16 @@
         max-width: 95vw;
     }
 
-    .newsletter-img{
+    .newsletter-img {
         max-width: 95vw;
-    }
-
-
-
-    /* styles for client review section */
-    .client-review-section {
-        height: 1300px;
     }
 
     /* styles for footer */
     footer {
-        min-width: 100vw
+        min-width: 100vw;
     }
 
-    footer p{
+    footer p {
         max-width: 80%;
     }
 }
